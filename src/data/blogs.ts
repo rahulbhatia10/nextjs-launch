@@ -18,6 +18,15 @@ export const blogs: Blog[] = [
     author: "Alice Chen",
   },
   {
+    slug: "/blog/test",
+    title: "Testing SSG",
+    excerpt: "Learn the basics of Next.js SSG and build your first application.",
+    content:
+      "Next.js is a powerful React framework that enables server-side rendering, static site generation, and more. In this post, we walk through setting up your first project, understanding the file-based routing system, and deploying to production.",
+    date: "2026-03-15",
+    author: "Aman Kanoria",
+  },
+  {
     slug: "static-site-generation-deep-dive",
     title: "Static Site Generation Deep Dive",
     excerpt: "Understand how SSG works under the hood in Next.js.",

@@ -6,7 +6,8 @@ export const dynamicParams = false;
 
 export async function generateStaticParams() {
   const pageType = process.env.GENERATE_PAGE_TYPE;
-
+  console.log(process.cwd());
+  console.log(process.env.GENERATE_PAGE_TYPE);
   if (pageType && pageType !== "all" && pageType !== "products") {
     console.log(
       "[SSG] Skipping product pages (GENERATE_PAGE_TYPE=%s)",

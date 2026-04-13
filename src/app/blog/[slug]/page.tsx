@@ -7,6 +7,8 @@ export const dynamicParams = false;
 export async function generateStaticParams() {
   const pageType = process.env.GENERATE_PAGE_TYPE;
 
+  console.log(process.cwd());
+  console.log(process.env.GENERATE_PAGE_TYPE);
   if (pageType && pageType !== "all" && pageType !== "blog") {
     console.log("[SSG] Skipping blog pages (GENERATE_PAGE_TYPE=%s)", pageType);
     return [];

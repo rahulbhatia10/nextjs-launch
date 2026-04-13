@@ -2,7 +2,7 @@ import Link from "next/link";
 import { blogs, getBlogBySlug } from "@/data/blogs";
 import { notFound } from "next/navigation";
 
-export const dynamicParams = true;
+export const dynamicParams = false;
 
 export async function generateStaticParams() {
   const pageType = process.env.GENERATE_PAGE_TYPE;

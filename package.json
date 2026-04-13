@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "cross-env GENERATE_PAGE_TYPE=NONE next build",
     "build:blog": "cross-env GENERATE_PAGE_TYPE=blog next build",
     "build:products": "cross-env GENERATE_PAGE_TYPE=products next build",
     "start": "next start",

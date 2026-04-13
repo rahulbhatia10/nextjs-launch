@@ -18,7 +18,7 @@ export const blogs: Blog[] = [
     author: "Alice Chen",
   },
   {
-    slug: "/blog/test",
+    slug: "test",
     title: "Testing SSG",
     excerpt: "Learn the basics of Next.js SSG and build your first application.",
     content:

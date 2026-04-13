@@ -2,7 +2,7 @@ import Link from "next/link";
 import { products, getProductById } from "@/data/products";
 import { notFound } from "next/navigation";
 
-export const dynamicParams = true;
+export const dynamicParams = false;
 
 export async function generateStaticParams() {
   const pageType = process.env.GENERATE_PAGE_TYPE;
